@@ -13,6 +13,7 @@ async function authenticate(username, password) {
     });  
   
     if (response.ok) {  
+        console.log("here")
         return await response.json();  
     } else {  
         throw new Error("Authentication failed");  
@@ -27,6 +28,8 @@ loginForm.addEventListener("submit", async (event) => {
   
     const username = document.getElementById("username").value;  
     const password = document.getElementById("password").value;  
+    console.log(username)
+    console.log(password)
       
     try {  
         const result = await authenticate(username, password);  
