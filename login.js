@@ -19,7 +19,9 @@ async function authenticate(username, password) {
         throw new Error("Authentication failed");  
     }  
 }  
-  
+
+console.log("here1")
+console.log("here2")
 const loginForm = document.getElementById("loginForm");  
 const loginError = document.getElementById("loginError");  
   
