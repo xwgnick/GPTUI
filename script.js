@@ -1,7 +1,7 @@
 async function fetchGPTAnswer(question) {  
     // Replace with your GPT endpoint URL and API key  
-    const endpoint = "https://openaifordmoj.openai.azure.com/openai/deployments/GPT4Deployment/chat/completions?api-version=2023-03-15-preview";  
-    const apiKey = "17124f97e4784cb1aa92ae4954baa41b";  
+    const endpoint = "https://gptresource.openai.azure.com/openai/deployments/GPT35/chat/completions?api-version=2023-03-15-preview";  
+    const apiKey = "ba9f4c1a086c4e66926b9a0cf333ec77";  
   
     const messages = [  
         { role: "system", content: "You are an AI assistant that helps people find information." },  
