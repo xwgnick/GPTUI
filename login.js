@@ -1,4 +1,4 @@
-const backendAuthUrl = "https://gptbackendcheckuser.azurewebsites.net/api/CheckUserNamePassword?code=r-oQbN3YSFmQwu7sYoiIBHwiSkCL-xJ9lVcgIMEoN6X0AzFu6CqIEw=="; // Replace with your backend authentication URL  
+const backendAuthUrl = "https://gptbackendcheckuserv2.azurewebsites.net/api/CheckUserNamePassword?code=E5Q-x0_qLQ6G-WrNg-52JWLuTPZpOJ9EeOr-MEInPh5dAzFuQzR_mg=="; // Replace with your backend authentication URL  
   
 async function authenticate(username, password) {  
     const response = await fetch(backendAuthUrl, {  
