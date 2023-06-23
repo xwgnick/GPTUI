@@ -15,7 +15,7 @@ async function fetchGPTAnswer(question) {
             "api-key": apiKey  
         },  
         body: JSON.stringify({  
-            messages: JSON.stringify(messages),  
+            messages: messages,  
             max_tokens: 800,  
             temperature: 0.7,  
             frequency_penalty: 0,  
