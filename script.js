@@ -32,8 +32,7 @@ async function fetchGPTAnswer(question) {
     }  
   
     const data = await response.json();  
-    console.log(data)
-    const lastMessage = data.choices[0].message.text;  
+    const lastMessage = data.choices[0].message.content;  
     return lastMessage;  
 }  
 
