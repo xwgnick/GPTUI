@@ -1,4 +1,5 @@
 async function fetchGPTAnswer(question) {  
+    console.log("here`")
     // Replace with your GPT endpoint URL and API key  
     const endpoint = "https://openaifordmoj.openai.azure.com/openai/deployments/GPT4Deployment/chat/completions?api-version=2023-03-15-preview";  
     const apiKey = "17124f97e4784cb1aa92ae4954baa41b";  
@@ -7,6 +8,7 @@ async function fetchGPTAnswer(question) {
         { role: "system", content: "You are an AI assistant that helps people find information." },  
         { role: "user", content: question }  
     ];  
+    console.log("message: jere 1")
   
     const response = await fetch(endpoint, {  
         method: "POST",  
@@ -24,8 +26,10 @@ async function fetchGPTAnswer(question) {
             stop: null  
         })  
     });  
-  
+    console.log("message: jere 2")
+
     if (!response.ok) {  
+        console.log("message: jere 3")
         throw new Error("Failed to fetch answer");  
     }  
   
