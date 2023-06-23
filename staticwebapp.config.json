@@ -1,0 +1,18 @@
+{  
+  "routes": [  
+    {  
+      "route": "/",  
+      "serve": "/login.html",  
+      "statusCode": 200  
+    },  
+    {  
+      "route": "/*",  
+      "serve": "/login.html",  
+      "statusCode": 404  
+    }  
+  ],  
+  "navigationFallback": {  
+    "rewrite": "login.html",  
+    "exclude": ["/images/*.{png,jpg,gif}", "/css/*", "/js/*"]  
+  }  
+}  
