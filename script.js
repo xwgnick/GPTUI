@@ -27,7 +27,8 @@ async function fetchGPTAnswer(question) {
     console.log("message: jere 2")
 
     if (!response.ok) {  
-        console.log(response.body)
+        console.error('Error status:', response.status);  
+        console.error('Error response:', await response.text());  
         throw new Error("Failed to fetch answer");  
     }  
   
