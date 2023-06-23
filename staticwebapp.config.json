@@ -4,11 +4,6 @@
       "route": "/",  
       "serve": "/login.html",  
       "statusCode": 200  
-    },  
-    {  
-      "route": "/*",  
-      "serve": "/login.html",  
-      "statusCode": 404  
     }  
   ],  
   "navigationFallback": {  
