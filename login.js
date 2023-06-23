@@ -13,15 +13,12 @@ async function authenticate(username, password) {
     });  
   
     if (response.ok) {  
-        console.log("here")
         return await response.json();  
     } else {  
         throw new Error("Authentication failed");  
     }  
 }  
 
-console.log("here1")
-console.log("here2")
 const loginForm = document.getElementById("loginForm");  
 const loginError = document.getElementById("loginError");  
   
@@ -30,13 +27,11 @@ loginForm.addEventListener("submit", async (event) => {
   
     const username = document.getElementById("username").value;  
     const password = document.getElementById("password").value;  
-    console.log(username)
-    console.log(password)
       
     try {  
         const result = await authenticate(username, password);  
         if (result.success) {  
-            window.location.href = "index.html";  
+            window.location.href = "main.html";  
         } else {  
             loginError.textContent = "Invalid username or password";  
         }  
