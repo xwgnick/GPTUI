@@ -31,7 +31,7 @@ loginForm.addEventListener("submit", async (event) => {
     try {  
         const result = await authenticate(username, password);  
         if (result.success) {  
-            window.location.href = "main.html";  
+            window.location.href = "chatbot.html";  
         } else {  
             loginError.textContent = "Invalid username or password";  
         }  
