@@ -3,13 +3,17 @@
 <head>  
     <meta charset="UTF-8">  
     <meta name="viewport" content="width=device-width, initial-scale=1.0">  
-    <title>Login</title>  
+    <title>Chatbot Interface</title>  
     <link rel="stylesheet" href="styles.css">  
 </head>  
 <body>  
-    <div class="login-container">  
-        <h1>Login</h1>  
-        <div id="loginError" class="error-message"></div>  
+    <div class="chat-container">  
+        <div class="chat-output" id="chatOutput"></div>  
+        <div class="chat-input-container">  
+            <input type="text" id="userInput" placeholder="Type your question...">  
+            <button id="sendButton">Send</button>  
+        </div>  
     </div>  
+    <script src="script.js"></script>  
 </body>  
 </html>  
