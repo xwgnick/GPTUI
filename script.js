@@ -24,7 +24,6 @@ async function fetchGPTAnswer(question) {
             stop: null  
         })  
     });  
-    console.log("message: jere 2")
 
     if (!response.ok) {  
         console.error('Error status:', response.status);  
@@ -33,6 +32,7 @@ async function fetchGPTAnswer(question) {
     }  
   
     const data = await response.json();  
+    console.log(data)
     const lastMessage = data.choices[0].message.text;  
     return lastMessage;  
 }  
