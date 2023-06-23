@@ -37,3 +37,16 @@ async function fetchGPTAnswer(question) {
     const lastMessage = data.choices[0].message.text;  
     return lastMessage;  
 }  
+
+const userInput = document.getElementById("userInput");  
+const sendButton = document.getElementById("sendButton");  
+const chatOutput = document.getElementById("chatOutput");  
+  
+sendButton.addEventListener("click", async () => {  
+    console.log("Send button clicked"); // Add this line  
+    const question = userInput.value;  
+    userInput.value = "";  
+    chatOutput.innerHTML += `<div>User: ${question}</div>`;  
+    const answer = await fetchGPTAnswer(question);  
+    chatOutput.innerHTML += `<div>Bot: ${answer}</div>`;  
+});  
